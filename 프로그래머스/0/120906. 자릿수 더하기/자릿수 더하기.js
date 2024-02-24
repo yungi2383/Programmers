@@ -1,8 +1,4 @@
 function solution(n) {
     let answer = 0;
-    array =  n.toString(10).split('')
-    for (a of array) {
-        answer += Number(a)
+    return array =  n.toString(10).split('').reduce((a,b) => a + Number(b),0)
     }
-    return answer
-}
